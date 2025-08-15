@@ -1,0 +1,370 @@
+/* ============================================ Font Style ==================================== */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* ============================================ Font Style ==================================== */
+
+/* ============================================ Began WebSite ==================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: rgb(53, 53, 75);
+    color: white;
+}
+
+html {
+    height: 0px;
+}
+
+/* ============================================ Began WebSite ==================================== */
+
+
+/* ============================================ Scroll CSS ======================================= */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #1A2255;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #313B90;
+}
+
+.generally_scrol {
+    border: none;
+    border-radius: 15px;
+    width: 4%;
+    height: 56px;
+    background-color: #313B90;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 15;
+    font-size: 1.8rem;
+    right: 15px;
+    justify-content: center;
+    top: 90%;
+    color: white;
+    display: none;
+    transition: 0.6s;
+}
+
+.generally_scrol:hover {
+    background-color: #33BCD0;
+    cursor: pointer;
+}
+
+/* ============================================ Scroll CSS ======================================= */
+
+
+/* ============================================ Dark Mood ======================================== */
+.darkmood {
+    width: 90px;
+    height: 40px;
+    background-color: #313B90;
+    color: white;
+    border-radius: 15px;
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    transition: 0.7s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.darkmood:hover {
+    background-color: #33BCD0;
+    color: white;
+    cursor: pointer;
+}
+
+.ri-moon-line,
+.ri-sun-line {
+    font-size: 1.5rem;
+}
+
+/* ============================================ Dark Mood ======================================== */
+
+
+/* ============================================ Header CSS ======================================== */
+.header_container {
+    width: 100%;
+    height: 200px;
+    background-color: #1A2255;
+    color: white;
+    display: flex;
+    font-size: 1.8rem;
+    align-items: center;
+    gap: 10px;
+}
+
+.header_title {
+    display: flex;
+    gap: 63px;
+}
+
+.header_title a {
+    text-decoration: none;
+    color: aliceblue;
+    transition: 0.7s;
+}
+
+
+.header_title a:hover {
+    color: #33BCD0;
+}
+
+.change {
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #313B90;
+    font-style: italic;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 47px;
+    transition: 0.7s;
+}
+
+.change:hover {
+    background-color: #33BCD0;
+    color: white !important;
+}
+
+.logo {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin: 10px 15px;
+}
+
+.ri-shopping-cart-2-fill {
+    font-size: 1.8rem;
+}
+
+.login{
+    font-size: 19px;
+}
+/* ============================================ Header CSS ======================================== */
+
+
+/* ============================================ Main CSS ========================================== */
+.vacanciesh2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    font-size: 2.8rem;
+}
+
+.vacanciesh2,
+.finish_container p,
+.icon a,
+.footer_a a,
+.sheet_icon a,
+.footer_sheet div p,
+.sheet_footer p,
+.ri-mail-fill,
+.contact_input p {
+    color: white;
+    background: repeating-linear-gradient(-45deg, #443B7E 0%, #745cf9 7.14%, lightblue 14.28%, #af40ff 21.4%, #af40ff 28.56%, blue 35.7%, #757bba 42.84%, #1A2255 50%);
+    background-size: 600vw 600vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: slide 10s linear infinite forwards;
+}
+
+@keyframes slide {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 600vw;
+    }
+}
+
+.contact_input input,
+textarea {
+    background-color: initial;
+    border-radius: 0 30px;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 30px;
+    outline: none;
+    padding: 9px 5px;
+    text-indent: 13px;
+    width: 270px;
+    margin-left: 20%;
+    box-shadow: 3px 7px 13px 7px rgba(138, 43, 226, 0.69);
+    resize: none;
+}
+
+.contact_input {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 80px;
+    width: 950px;
+}
+
+.contact_input p {
+    margin-left: 200px;
+    font-size: 1.6rem;
+    font-weight: 900;
+    display: none;
+}
+
+textarea::placeholder {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    background: linear-gradient(75deg, blue, #6d036d);
+    border: 0;
+    border-radius: 0 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    outline: none;
+    padding: 12px 26px;
+    margin-left: 200px;
+    margin-top: 30px;
+    height: 45px;
+    transition: 1.5s;
+    width: 200px;
+}
+
+button:hover {
+    color: white;
+    background-color: #540d0d;
+}
+
+.finish_container {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.containercontact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 1.25rem;
+}
+
+.icon a {
+    text-decoration: none;
+    color: black;
+    color: 20px;
+    transition: 0.5s;
+}
+
+.icon a:hover {
+    color: blue;
+}
+
+/* ============================================ Main CSS ========================================== */
+
+
+
+/* ============================================ Footer CSS ======================================== */
+footer {
+    background-color: #1A2255;
+    height: 600px;
+    width: 100%;
+}
+
+.footer_a {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    margin: 400px 50px;
+}
+
+.sheet_footer {
+    margin-top: 150px;
+}
+
+.sheet_icon a {
+    text-decoration: none;
+}
+
+.footer_container a {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+    font-family: Dancing Script, cursive;
+    font-style: italic;
+    font-size: 1.5rem;
+    margin: 30px 240px;
+    width: 10%;
+    transition: 0.7s;
+}
+
+.footer_container a:hover {
+    color: #33BCD0;
+}
+
+.footer_sheet div p {
+    transition: 0.7s;
+}
+
+.footer_sheet div {
+    display: flex;
+    margin-bottom: 70px;
+    margin-left: 750px;
+    color: white;
+    font-size: 1.5rem;
+    gap: 40px;
+}
+
+.footer_sheet {
+    margin-top: -680px;
+}
+
+.sheet_footer p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-left: 50px;
+    align-items: center;
+}
+
+.sheet_footer hr {
+    width: 70%;
+    margin: 10px auto;
+}
+
+.ri-mail-fill {
+    display: flex;
+    align-items: center;
+}
+
+.sheet_icon {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    gap: 125px;
+    margin-top: 40px;
+    transition: 0.7s;
+}
+/* ============================================ Footer CSS ======================================== */
